@@ -1,162 +1,82 @@
-##### **# AWS S3 Bucket Experiment – Lily Flower Image**
+                                                              AWS S3 – Bucket, Policy & Versioning (Hands-On)
 
+--------------------------------------------------
 
+Overview
+--------
+This project documents my hands-on learning with Amazon S3.
+The objective was to understand how S3 buckets work, how public
+access is controlled using bucket policies, and how object
+versioning behaves during overwrites.
 
-\## Overview
+This is a learning experiment, not a production setup.
 
 
+What I Practiced
+----------------
 
-This repository demonstrates a practical experiment with AWS S3, including bucket creation, file upload, bucket policy configuration, object overwriting, and versioning. The project includes screenshots of each step for clear reference.
+1. S3 Bucket Creation
+- Created an S3 bucket using the AWS Management Console
+- Used default settings to understand baseline behavior
 
 
+2. Object Upload
+- Uploaded an image file (Lily flower)
+- Verified object storage and basic access behavior
 
-This is intended as a learning exercise to understand S3 permissions, public access, and versioning.
 
+3. Bucket Policy (Public Read Access)
+- Used AWS Policy Generator
+- Added a bucket policy to allow public read access (s3:GetObject)
+- Used bucket ARN with /* to allow access to all objects
+- Verified access using the object URL
 
+4. Object Overwriting
+- Uploaded the same object again with changes
+- Observed overwrite behavior
 
----
 
-\## Experiment Steps
+5. Bucket Versioning
+- Enabled S3 versioning
+- Confirmed that each overwrite creates a new version
+- Previous versions are retained automatically
 
 
+6. Cleanup and Cost Awareness
+- Downloaded required files and screenshots
+- Deleted objects, bucket policy, and the bucket
+- Purpose: avoid unnecessary AWS charges
 
-\### 1. Bucket Creation
 
+Screenshots
+-----------
+Screenshots included show:
+- Bucket creation
+- Object upload
+- Bucket policy configuration
+- Versioning behavior
+- Public access verification
 
 
-\* Created a new S3 bucket using the AWS Management Console.
+Key Learnings
+-------------
+- S3 is region-based but globally accessible
+- Public access is controlled via bucket policies
+- Versioning protects against accidental overwrites
+- AWS resources must be cleaned up properly
+- Even small experiments should be documented clearly
 
-\* Configured bucket settings and enabled versioning to track object changes automatically.
 
+Best Practices Observed
+-----------------------
+- Avoid public buckets unless required
+- Enable versioning for important data
+- Delete test resources after learning
+- Use clear naming and documentation
 
 
-\### 2. File Upload
-
-
-
-\* Uploaded a sample image of a Lily flower to the bucket.
-
-\* Verified the object exists and tested basic S3 object retrieval.
-
-
-
-\### 3. Bucket Policy
-
-
-
-\* Used the AWS Policy Generator to create a policy allowing public read access.
-
-\* Copied the bucket ARN and applied the generated policy in the bucket policy editor.
-
-\* Tested the public URL — the image loaded successfully.
-
-
-
-\### 4. Object Overwriting
-
-
-
-\* Uploaded a new version of the Lily image to test S3 versioning.
-
-\* Confirmed that old versions were retained automatically.
-
-
-
-\### 5. Cleanup
-
-
-
-\* Downloaded all files and screenshots locally.
-
-\* Deleted the bucket to avoid any unnecessary AWS charges.
-
-
-
----
-
-
-
-\## Screenshots
-
-
-
-The following screenshots document the experiment workflow:
-
-
-
-\* \*\*Bucket Creation \& Settings: execution screenshots/bucket creation.PNG
-
-\* \*\* AWS policy generation: execution screenshots/aws policy generator.PNG
-
-\* \*\*bucket arn check:execution screenshots/bucket arn.PNG
-
-\* \*\*Object Versioning:execution screenshots/bucket overwriting and their versions.PNG
-
-\* \*\*json policy:execution screenshots/json policy generation.PNG
-
-\* \*\*public access:execution screenshots/public access check.PNG
-
-\* \*\*status of file in bucket:execution screenshots/upload status of file(image).PNG
-
-\* \*\*before overwriting output:execution screenshots/output obtained!!.PNG
-
-\* \*\*after overwritten output:execution screenshots/overwritten output.PNG
-
-
-
----
-
-
-
-\## Key Learnings
-
-
-
-\* How to create and configure S3 buckets.
-
-\* How to upload objects and make them publicly accessible.
-
-\* Understanding bucket policies and ARNs.
-
-\* How versioning works for overwritten objects.
-
-\* Best practices for managing AWS resources efficiently to avoid costs.
-
-
-
----
-
-
-
-\## Best Practices
-
-
-
-\* Always enable versioning for important buckets.
-
-\* Test object URLs before sharing publicly.
-
-\* Delete test buckets to avoid incurring charges.
-
-\* Use organized folder structures for files and screenshots in GitHub.
-
-
-
----
-
-
-
-\## Notes
-
-
-
-\* This repo serves as a learning and documentation exercise.
-
-\* All AWS services used were free-tier or small-scale testing.
-
-\* The images and screenshots are for educational purposes only.
-
-
-
-
-
+Notes
+-----
+- This project is part of my AWS fundamentals learning journey
+- All actions were performed manually via AWS Console
+- No production data was used
