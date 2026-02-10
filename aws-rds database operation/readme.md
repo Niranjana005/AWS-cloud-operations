@@ -1,54 +1,35 @@
-##### &nbsp;                   **AWS RDS – PostgreSQL Database Creation and Connection using DBeaver**
+                            AWS RDS – PostgreSQL Database Creation and Connection using DBeaver
+This repository documents my hands-on learning with AWS RDS (PostgreSQL).
 
+I created an RDS PostgreSQL instance, set up a database, and successfully connected it using DBeaver
 
+🧰 Tools & Technologies Used
 
+- AWS RDS
 
+- PostgreSQL
 
-This repository documents my hands-on learning with AWS RDS (PostgreSQL).  
+- DBeaver
 
-I created an RDS PostgreSQL instance, set up a database, and successfully connected it using **DBeaver**
+- AWS Management Console
 
+🛠️ What I Did
 
+1. Created an AWS instance using the default security group.
 
-**🧰 Tools \& Technologies Used**
+2. Later modified the security group inbound rules to allow database access from my IP.
 
-\- AWS RDS
+3. Created a database inside the RDS service.
 
-\- PostgreSQL
+4. Connected the database to DBeaver using the RDS endpoint.
 
-\- DBeaver
+🔐 Security Note
 
-\- AWS Management Console
+- No usernames, passwords, or sensitive details are shared.
 
+- The RDS instance was created under AWS Free Tier and deleted after testing.
 
-
-
-
-**🛠️ What I Did**
-
-
-
-1\. Created an AWS instance using the default security group.
-
-2\. Later modified the security group inbound rules to allow database access from my IP.
-
-3\. Created a database inside the RDS service.
-
-4\. Connected the database to DBeaver using the RDS endpoint.
-
-
-
-
-
-**🔐 Security Note**
-
-\- No usernames, passwords, or sensitive details are shared.
-
-\- The RDS instance was created under **AWS Free Tier** and deleted after testing.
-
-
-
-**📸 Screenshots Included**
+📸 Screenshots Included
 
 instance status
 
@@ -60,37 +41,20 @@ Details of the database
 
 new database connection creation
 
+  (All screenshots are included only for learning documentation.)
 
+📚 What I Learned
 
+- How AWS RDS works with PostgreSQL
 
+- How security groups control database access
 
-&nbsp;                             (All screenshots are included only for learning documentation.)
+- Connecting a cloud PostgreSQL database using DBeaver
 
+🚀 Next Steps
 
+- Connect AWS RDS PostgreSQL with a Python application
 
+- Explore private RDS setup using VPC
 
-
-**📚 What I Learned**
-
-\- How AWS RDS works with PostgreSQL
-
-\- How security groups control database access
-
-\- Connecting a cloud PostgreSQL database using **DBeaver**
-
-
-
-
-
-
-
-**🚀 Next Steps**
-
-\- Connect AWS RDS PostgreSQL with a Python application
-
-\- Explore private RDS setup using VPC
-
-\- Learn backups, monitoring, and parameter groups in RDS
-
-
-
+- Learn backups, monitoring, and parameter groups in RDS
