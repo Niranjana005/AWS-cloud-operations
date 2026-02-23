@@ -238,7 +238,7 @@ Use IAM roles instead of access keys
 
 
 
-👩‍💻 Author
+**👩‍💻 Author**
 
 
 
