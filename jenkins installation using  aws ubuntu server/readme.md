@@ -148,7 +148,7 @@ Open:
 
 
 
-http://<Public-IP>:8080
+http://(Public-IP):8080
 
 
 
