@@ -148,7 +148,7 @@ Open:
 
 
 
-http://<Public-IP>:8080
+http://(Public-IP):8080
 
 
 
@@ -238,7 +238,7 @@ Use IAM roles instead of access keys
 
 
 
-👩‍💻 Author
+**👩‍💻 Author**
 
 
 
